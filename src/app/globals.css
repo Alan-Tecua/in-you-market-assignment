@@ -1,12 +1,12 @@
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
-    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
-    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
+    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
+    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 255, 255, 255;
   --background-end-rgb: 255, 255, 255;
 
   --primary-glow: conic-gradient(
@@ -87,21 +87,52 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #f3f3f3;
 }
 
 a {
   color: inherit;
   text-decoration: none;
 }
+h1 {
+  color: #212a40;
+}
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   html {
-    color-scheme: dark;
+    color-scheme: light;
   }
+}
+
+.highlight-color {
+  color: #ec7462;
+}
+
+.glossy {
+  content: '';
+  background-color: #fff;
+  opacity: 0.5;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.m-05 {
+  margin: 0.5rem;
+}
+
+.btn-color {
+  background-color: #ec7462;
+}
+
+:hover.btn-color {
+  background-color: #e76450;
+}
+
+.btn-option {
+  background-color: #4dbf9f;
+}
+:hover.btn-option {
+  background-color: #3cac8c;
 }
