@@ -26,4 +26,4 @@ Simple user management application built with Next.js, MUI, and Redux.
 
 ## Deployed on Netlify
 
-site: `https://inyou-market-assignment.netlify.app/`
+site: [https://inyou-market-assignment.netlify.app/](https://inyou-market-assignment.netlify.app/)
