@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import { Provider } from 'react-redux';
-import { store } from '../../../store';
-import UserList from '../../UserList';
+import { store } from '../../store';
+import UserList from '../UserList';
 
 const testUser = [
   {
@@ -36,7 +36,7 @@ const testUser = [
   },
 ];
 
-jest.mock('../../services/userAPI', () => ({
+jest.mock('../../../services/userAPI', () => ({
   fetchUsers: jest.fn().mockResolvedValue(testUser),
 }));
 

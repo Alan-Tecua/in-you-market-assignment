@@ -49,7 +49,7 @@ const AddForm: React.FC<AddFormProps> = ({ onClose }) => {
   return (
     <Dialog open={true} onClose={onClose}>
       <DialogTitle>Registration</DialogTitle>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} data-testid="add-form">
         <DialogContent>
           <Stack spacing={2} direction="column">
             <TextField
